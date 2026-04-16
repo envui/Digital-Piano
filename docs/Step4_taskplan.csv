@@ -1,0 +1,10 @@
+Order,Feature,System,Status,Owner,Reviewer,Acceptance Criteria,Definition of Done
+1,SysTick audio timing engine,S1 & S2,In progress,Mathew,Miguel,SysTick ISR fires at correct rate; observable toggle/DAC update in ISR,Logic analyzer screenshot showing stable SysTick timing
+2,GPIO speaker toggle (PA2) square-wave output,S1,In progress,Rodrigo,Mathew,PA2 toggles at note frequency; audible or visible on analyzer,Logic analyzer capture or video showing PA2 toggling
+3,6-bit DAC output (PB0–PB5) sine-wave output,S2,In progress,Kyle,Rodrigo,DAC outputs valid 6-bit waveform; SysTick reload matches note frequency × samples,Logic analyzer waveform showing DAC stepping / sine approximation
+4,Note frequency tables (3 octaves),S1 & S2,In progress,Kyle,Miguel,Correct frequencies for required notes; octave scaling works,Test log + analyzer/video proof for notes across 3 octaves
+5,Piano key input handling (press/hold/release),S1 & S2,Planned,Miguel,Mathew,Press-and-hold plays note; release stops sound; debounced/robust,Demo video showing correct interaction + code review
+6,Octave selection logic,S1 & S2,Planned,Miguel,Kyle,Octave up/down changes note frequencies; bounded to 3 octaves,Unit/integration test showing octave transitions + evidence capture
+7,Mode control (Auto / Piano),S1,Planned,Rodrigo,Kyle,Auto mode cycles notes; Piano mode responds to keys; clear switching behavior,Video demonstrating mode switching + expected audio behavior
+8,LED status indicators,S1 & S2,Planned,Mathew,Rodrigo,LED indicates key press and octave/mode state per design,Visual confirmation (photo/video) + code review
+9,Integrated system testing & evidence packaging,S1 & S2,Planned,Team 9,Team 9,All module tests pass; traceability updated; evidence stored in repo,Completed Step 3/4 test checklist with artifacts linked in PR
